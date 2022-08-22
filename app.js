@@ -19,7 +19,7 @@ io.on('connection', socket => {
     socket.emit('update_message', messages);
 
     socket.on("New_Message", data => {
-        messages.push(data.msg);
+        messages.push(data);
         
         io.emit('update_message', messages);
 

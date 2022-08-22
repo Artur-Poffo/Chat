@@ -42,3 +42,17 @@ form input[type="submit"]:hover {
     color: aliceblue;
     background-color: rgb(0, 119, 255);
 }
+
+/* MEDIA CONTROL*/
+
+@media (max-width: 740px) {
+    #messages {
+        width: 500px;
+    }
+}
+
+@media (max-width: 525px) {
+    #messages {
+        width: 350px;
+    }
+}

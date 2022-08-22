@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <main>
-        
-        <div id="messages">
+      <form action="./index.html" name="UserForm" id="userform_div">
+        <h1 style="font-family: sans-serif; margin-bottom: 10px">Logar:</h1>
+        <input
+          required
+          type="text"
+          name="user"
+          id="userInput"
+          placeholder="Nome de Usuário"
+          autocomplete="off"
+        />
+        <input type="submit" value="Login" />
+      </form>
 
-        </div>
+      <div id="messages"></div>
 
-        <form name="form_name" id="form_div" action="">
-            <input type="text" name="msgs" id="message" placeholder="Digite sua mensagem" />
-            <input type="submit" value="Enviar">
-        </form>
-
+      <form name="form_name" id="form_div">
+        <input
+          type="text"
+          name="msgs"
+          id="message"
+          placeholder="Digite sua mensagem"
+        />
+        <input type="submit" value="Enviar" />
+      </form>
     </main>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="./scripts/script.js"></script>
-</body>
+  </body>
 </html>
